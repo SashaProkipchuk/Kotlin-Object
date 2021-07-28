@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "F:\\Users\\sasha\\KotlinObject_Materials\\starter\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\recycler_item_product.xml",
+        "source": "F:\\Users\\sasha\\KotlinObject_Materials\\starter\\app\\src\\main\\res\\layout\\recycler_item_product.xml"
+    },
+    {
+        "merged": "F:\\Users\\sasha\\KotlinObject_Materials\\starter\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_shopping_cart.xml",
+        "source": "F:\\Users\\sasha\\KotlinObject_Materials\\starter\\app\\src\\main\\res\\layout\\activity_shopping_cart.xml"
+    },
+    {
+        "merged": "F:\\Users\\sasha\\KotlinObject_Materials\\starter\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_main.xml",
+        "source": "F:\\Users\\sasha\\KotlinObject_Materials\\starter\\app\\src\\main\\res\\layout\\activity_main.xml"
+    }
+]
