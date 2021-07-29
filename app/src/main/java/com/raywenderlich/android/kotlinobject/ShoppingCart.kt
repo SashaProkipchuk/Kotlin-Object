@@ -2,6 +2,7 @@ package com.raywenderlich.android.kotlinobject
 
 object ShoppingCart {
     // 1.
+    @JvmStatic
     var products: List<Product> = emptyList()
         private set
 

@@ -6,3 +6,5 @@ com/raywenderlich/android/kotlinobject/BuildConfig.java
  com.raywenderlich.android.kotlinobject.BuildConfig
 com/raywenderlich/android/kotlinobject/databinding/ActivityMainBinding.java
  com.raywenderlich.android.kotlinobject.databinding.ActivityMainBinding
+com/raywenderlich/android/kotlinobject/ShoppingCartCalculator.java
+ com.raywenderlich.android.kotlinobject.ShoppingCartCalculator

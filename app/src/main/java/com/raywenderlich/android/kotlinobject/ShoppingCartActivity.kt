@@ -34,6 +34,8 @@
 
 package com.raywenderlich.android.kotlinobject
 
+import android.content.Context
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -62,8 +64,19 @@ class ShoppingCartActivity : AppCompatActivity() {
   }
 
   private fun setupProducts() {
-    // TODO
-    products = emptyList()
+    // 1.
+    products = ShoppingCart.products
+
+    // 2.
+    val calculator = ShoppingCartCalculator()
+    val totalPriceCents =
+      calculator.calculateTotalFromShoppingCart()
+
+    // 3.
+    viewBinding.textTotalCartValue.text =
+      getString(R.string.text_total_price,
+        totalPriceCents.asPriceString)
+
   }
 
   private fun setupClearCartButton() {
@@ -77,5 +90,10 @@ class ShoppingCartActivity : AppCompatActivity() {
     recyclerView.adapter = adapter
   }
 
-  // TODO
+  companion object {
+    fun newIntent(context: Context): Intent {
+      return Intent(context, ShoppingCartActivity::class.java)
+    }
+  }
+
 }

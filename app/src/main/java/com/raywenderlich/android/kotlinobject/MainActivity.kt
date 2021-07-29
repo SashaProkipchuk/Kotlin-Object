@@ -38,6 +38,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.widget.Button
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.RecyclerView
 import com.raywenderlich.android.kotlinobject.databinding.ActivityMainBinding
@@ -63,11 +64,18 @@ class MainActivity : AppCompatActivity() {
   }
 
   private fun addProductToCart(product: Product) {
-    // TODO
+    ShoppingCart.addProduct(product)
+    Toast.makeText(
+      this,
+      R.string.product_added_toast, Toast.LENGTH_SHORT
+    ).show()
+
   }
 
   private fun goToCart() {
-    // TODO
+    val intent = ShoppingCartActivity.newIntent(this)
+    startActivity(intent)
+
   }
 
   private fun setup() {
