@@ -47,6 +47,14 @@ class ShoppingCartActivity : AppCompatActivity() {
 
   private lateinit var products: List<Product>
 
+  private var onCartChangedListener =
+    object : ShoppingCart.OnCartChangedListener {
+      override fun onCartChanged() {
+        setupProducts()
+        setupRecyclerView()
+      }
+    }
+
   override fun onCreate(savedInstanceState: Bundle?) {
     super.onCreate(savedInstanceState)
     viewBinding = ActivityShoppingCartBinding.inflate(LayoutInflater.from(this))
@@ -55,7 +63,7 @@ class ShoppingCartActivity : AppCompatActivity() {
     setup()
     setupClearCartButton()
 
-    // Your code
+    ShoppingCart.setOnCartChangedListener(onCartChangedListener)
   }
 
   private fun setup() {
@@ -80,7 +88,9 @@ class ShoppingCartActivity : AppCompatActivity() {
   }
 
   private fun setupClearCartButton() {
-    // TODO
+    viewBinding.clearCartButton.setOnClickListener {
+      ShoppingCart.clear()
+    }
   }
 
   private fun setupRecyclerView() {
