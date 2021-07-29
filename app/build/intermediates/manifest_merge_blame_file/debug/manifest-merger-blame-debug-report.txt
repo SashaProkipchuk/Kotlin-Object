@@ -25,30 +25,31 @@
 17-->F:\Users\sasha\KotlinObject_Materials\starter\app\src\main\AndroidManifest.xml:10:7-52
 18        android:supportsRtl="true"
 18-->F:\Users\sasha\KotlinObject_Materials\starter\app\src\main\AndroidManifest.xml:11:7-33
-19        android:theme="@style/AppTheme" >
-19-->F:\Users\sasha\KotlinObject_Materials\starter\app\src\main\AndroidManifest.xml:12:7-38
-20
-21        <!-- Main Activity -->
-22        <activity
-22-->F:\Users\sasha\KotlinObject_Materials\starter\app\src\main\AndroidManifest.xml:15:5-23:16
-23            android:name="com.raywenderlich.android.kotlinobject.MainActivity"
-23-->F:\Users\sasha\KotlinObject_Materials\starter\app\src\main\AndroidManifest.xml:16:9-37
-24            android:theme="@style/SplashTheme" >
-24-->F:\Users\sasha\KotlinObject_Materials\starter\app\src\main\AndroidManifest.xml:17:9-43
-25            <intent-filter>
-25-->F:\Users\sasha\KotlinObject_Materials\starter\app\src\main\AndroidManifest.xml:18:7-22:23
-26                <action android:name="android.intent.action.MAIN" />
-26-->F:\Users\sasha\KotlinObject_Materials\starter\app\src\main\AndroidManifest.xml:19:9-61
-26-->F:\Users\sasha\KotlinObject_Materials\starter\app\src\main\AndroidManifest.xml:19:17-58
-27
-28                <category android:name="android.intent.category.LAUNCHER" />
-28-->F:\Users\sasha\KotlinObject_Materials\starter\app\src\main\AndroidManifest.xml:21:9-69
-28-->F:\Users\sasha\KotlinObject_Materials\starter\app\src\main\AndroidManifest.xml:21:19-66
-29            </intent-filter>
-30        </activity>
-31        <activity android:name="com.raywenderlich.android.kotlinobject.ShoppingCartActivity" />
-31-->F:\Users\sasha\KotlinObject_Materials\starter\app\src\main\AndroidManifest.xml:25:5-54
-31-->F:\Users\sasha\KotlinObject_Materials\starter\app\src\main\AndroidManifest.xml:25:15-51
-32    </application>
-33
-34</manifest>
+19        android:testOnly="true"
+20        android:theme="@style/AppTheme" >
+20-->F:\Users\sasha\KotlinObject_Materials\starter\app\src\main\AndroidManifest.xml:12:7-38
+21
+22        <!-- Main Activity -->
+23        <activity
+23-->F:\Users\sasha\KotlinObject_Materials\starter\app\src\main\AndroidManifest.xml:15:5-23:16
+24            android:name="com.raywenderlich.android.kotlinobject.MainActivity"
+24-->F:\Users\sasha\KotlinObject_Materials\starter\app\src\main\AndroidManifest.xml:16:9-37
+25            android:theme="@style/SplashTheme" >
+25-->F:\Users\sasha\KotlinObject_Materials\starter\app\src\main\AndroidManifest.xml:17:9-43
+26            <intent-filter>
+26-->F:\Users\sasha\KotlinObject_Materials\starter\app\src\main\AndroidManifest.xml:18:7-22:23
+27                <action android:name="android.intent.action.MAIN" />
+27-->F:\Users\sasha\KotlinObject_Materials\starter\app\src\main\AndroidManifest.xml:19:9-61
+27-->F:\Users\sasha\KotlinObject_Materials\starter\app\src\main\AndroidManifest.xml:19:17-58
+28
+29                <category android:name="android.intent.category.LAUNCHER" />
+29-->F:\Users\sasha\KotlinObject_Materials\starter\app\src\main\AndroidManifest.xml:21:9-69
+29-->F:\Users\sasha\KotlinObject_Materials\starter\app\src\main\AndroidManifest.xml:21:19-66
+30            </intent-filter>
+31        </activity>
+32        <activity android:name="com.raywenderlich.android.kotlinobject.ShoppingCartActivity" />
+32-->F:\Users\sasha\KotlinObject_Materials\starter\app\src\main\AndroidManifest.xml:25:5-54
+32-->F:\Users\sasha\KotlinObject_Materials\starter\app\src\main\AndroidManifest.xml:25:15-51
+33    </application>
+34
+35</manifest>
